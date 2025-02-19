@@ -1,5 +1,5 @@
-import type { EVMChain } from '@lifi/types'
-import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi/types'
+import type { EVMChain } from '@lifi-fork/types'
+import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi-fork/types'
 import { multicallAddresses } from '../multicall.js'
 import { prefixChainId } from './utils.js'
 
@@ -36,6 +36,34 @@ export const supportedEVMChains: EVMChain[] = [
         'https://eth.drpc.org',
         'https://eth.public-rpc.com',
         'https://rpc.ankr.com/eth',
+      ],
+    },
+  },
+  {
+    key: ChainKey.PLS,
+    chainType: ChainType.EVM,
+    name: 'PulseChain',
+    coin: CoinKey.PLS,
+    id: ChainId.PLS,
+    mainnet: true,
+    logoURI:
+      'https://raw.githubusercontent.com/lifi-fork/types/main/src/assets/icons/chains/pulsechain.svg',
+    tokenlistUrl:
+      'https://tokens.app.pulsex.com/pulsex-extended-v0.1.2.tokenlist.json',
+    multicallAddress: multicallAddresses[ChainId.PLS],
+    metamask: {
+      chainId: prefixChainId(ChainId.PLS),
+      blockExplorerUrls: ['https://explorer.pulsechain.com/'],
+      chainName: 'PulseChain Mainnet',
+      nativeCurrency: {
+        name: 'PLS',
+        symbol: 'PLS',
+        decimals: 18,
+      },
+      rpcUrls: [
+        'https://rpc.pulsechain.com/',
+        'https://rpc-pulsechain.g4mm4.io/',
+        'https://pulsechain-rpc.publicnode.com/',
       ],
     },
   },
@@ -793,7 +821,6 @@ export const supportedEVMChains: EVMChain[] = [
         'https://mantle-rpc.publicnode.com',
         'https://mantle.drpc.org',
         'https://mantle.public-rpc.com',
-        'https://rpc.ankr.com/mantle',
       ],
     },
   },

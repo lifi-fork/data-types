@@ -1,4 +1,4 @@
-import type { Chain, ChainKey } from '@lifi/types'
+import type { Chain, ChainKey } from '@lifi-fork/types'
 import { supportedEVMChains } from './supportedChains.evm.js'
 import { supportedMVMChains } from './supportedChains.mvm.js'
 import { supportedSolanaChains } from './supportedChains.svm.js'

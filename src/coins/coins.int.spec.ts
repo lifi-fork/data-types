@@ -1,4 +1,4 @@
-import type { StaticToken } from '@lifi/types'
+import type { StaticToken } from '@lifi-fork/types'
 import { describe, expect, test } from 'vitest'
 import { defaultCoins, wrappedTokens } from './coins.js'
 

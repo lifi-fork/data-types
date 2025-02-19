@@ -1,4 +1,4 @@
-import { ChainId, ChainKey, CoinKey } from '@lifi/types'
+import { ChainId, ChainKey, CoinKey } from '@lifi-fork/types'
 import { describe, expect, it, test } from 'vitest'
 import {
   findDefaultToken,

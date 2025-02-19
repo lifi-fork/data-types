@@ -1,5 +1,5 @@
-import type { MVMChain } from '@lifi/types'
-import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi/types'
+import type { MVMChain } from '@lifi-fork/types'
+import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi-fork/types'
 
 export const supportedMVMChains: MVMChain[] = [
   {

@@ -1,5 +1,5 @@
-import type { Coin, StaticToken } from '@lifi/types'
-import { ChainId, CoinKey } from '@lifi/types'
+import type { Coin, StaticToken } from '@lifi-fork/types'
+import { ChainId, CoinKey } from '@lifi-fork/types'
 
 type BasicToken = {
   address: string
@@ -31,6 +31,11 @@ export const basicCoins: BasicCoin[] = [
       [ChainId.ETH]: {
         address: '0x0000000000000000000000000000000000000000',
         decimals: 18,
+      },
+      [ChainId.PLS]: {
+        address: '0x02DcdD04e3F455D838cd1249292C58f3B79e3C3C',
+        decimals: 18,
+        name: 'Wrapped Ether from Ethereum',
       },
       [ChainId.BSC]: {
         address: '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
@@ -142,6 +147,25 @@ export const basicCoins: BasicCoin[] = [
       [ChainId.ABS]: {
         address: '0x0000000000000000000000000000000000000000',
         decimals: 18,
+      },
+    },
+  },
+  {
+    key: CoinKey.PLS,
+    name: CoinKey.PLS,
+    logoURI:
+      'https://raw.githubusercontent.com/lifi-fork/types/main/src/assets/icons/chains/pulsechain.svg',
+    verified: true,
+    chains: {
+      [ChainId.PLS]: {
+        address: '0x0000000000000000000000000000000000000000',
+        decimals: 18,
+        name: 'Pulse',
+      },
+      [ChainId.ETH]: {
+        address: '0x97Ac4a2439A47c07ad535bb1188c989dae755341',
+        decimals: 18,
+        name: 'Wrapped Pulse from PulseChain',
       },
     },
   },
@@ -2112,6 +2136,16 @@ export const wrappedTokens: { [ChainId: string]: StaticToken } = {
     name: 'WETH',
     logoURI:
       'https://static.debank.com/image/eth_token/logo_url/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2/61844453e63cf81301f845d7864236f6.png',
+  },
+  [ChainId.PLS]: {
+    address: '0xA1077a294dDE1B09bB078844df40758a5D0f9a27',
+    symbol: 'WPLS',
+    decimals: 18,
+    chainId: ChainId.PLS,
+    coinKey: CoinKey.WPLS,
+    name: 'Wrapped Pulse from PulseChain',
+    logoURI:
+      'https://raw.githubusercontent.com/lifi-fork/types/main/src/assets/icons/chains/pulsechain.svg',
   },
   [ChainId.SOL]: {
     address: 'So11111111111111111111111111111111111111112',

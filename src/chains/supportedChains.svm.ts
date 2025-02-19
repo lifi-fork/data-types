@@ -1,5 +1,5 @@
-import type { SolanaChain } from '@lifi/types'
-import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi/types'
+import type { SolanaChain } from '@lifi-fork/types'
+import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi-fork/types'
 
 export const supportedSolanaChains: SolanaChain[] = [
   {

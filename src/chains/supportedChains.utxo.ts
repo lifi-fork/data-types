@@ -1,5 +1,5 @@
-import type { UTXOChain } from '@lifi/types'
-import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi/types'
+import type { UTXOChain } from '@lifi-fork/types'
+import { ChainId, ChainKey, ChainType, CoinKey } from '@lifi-fork/types'
 
 export const supportedUXTOChains: UTXOChain[] = [
   {
